@@ -1,10 +1,9 @@
 # Neural Message Passing for Visual Relationship Detection
 This repository contains the official PyTorch implementation of:
-
 <font size=4.5>**Neural Message Passing for Visual Relationship Detection** </font>
 Yue Hu, Siheng Chen, Xu Chen, Ya Zhang, Xiao Gu
 
-<font size=4.5>[paper](https://users.ece.cmu.edu/~sihengc/paper/19_ICMLW_HuCCZ.pdf), [code](https://github.com/PhyllisH/NMP)</font>
+<font size=5>[paper](https://users.ece.cmu.edu/~sihengc/paper/19_ICMLW_HuCCZ.pdf), [code](https://github.com/PhyllisH/NMP)</font>
 
 ![introduction](NMP_VRD.png)
 
