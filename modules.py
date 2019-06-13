@@ -163,7 +163,7 @@ class SimpleEncoder(nn.Module):
         return output, x_cls
         
 
-class MLPEncoder(nn.Module):
+class NMPEncoder(nn.Module):
     def __init__(self, n_hid, edge_types=71, node_types=101, n_iter=2, do_prob=0., use_vis=True, use_spatial=False, use_sem=True, use_loc=False, use_cls=False):
         super(MLPEncoder, self).__init__()
         self.use_vis = use_vis

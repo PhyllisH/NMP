@@ -3,7 +3,7 @@ This repository contains the official PyTorch implementation of:
 
 **Neural Message Passing for Visual Relationship Detection**
 Yue Hu, Siheng Chen, Xu Chen, Ya Zhang, Xiao Gu
-[https://github.com/PhyllisH/NMP](https://github.com/PhyllisH/NMP)
+[paper](https://users.ece.cmu.edu/~sihengc/paper/19_ICMLW_HuCCZ.pdf), [code](https://github.com/PhyllisH/NMP)
 
 ![introduction](NMP_VRD.png)
 
@@ -58,7 +58,7 @@ Here we use vrd dataset and predicate detection as example.
 └── visualize.py
 ```
 
-## Train and test phase
+## Train and test phases
 
 ```
 # train 
@@ -70,11 +70,13 @@ CUDA_VISIBLE_DEVICES=0 python train_vrd.py --encoder=nmp --use-loc --mode=eval -
 ## Citation
 
 ```
-@inproceedings{Hu_2019_ICMLW,
+@inproceedings{HuCCZG:19,
   author    = {Yue Hu, Siheng Chen, Xu Chen, Ya Zhang, Xiao Gu},
   title     = {Neural Message Passing for Visual Relationship Detection},
-  booktitle = {ICMLW},
+  booktitle = {ICML Workshop on Learning and Reasoning with Graph-Structured Representations},
   year      = {2019},
+  month = {June},
+  address = {Long Beach, CA}
 }
 ```
 

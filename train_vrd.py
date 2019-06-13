@@ -39,7 +39,7 @@ parser.add_argument('--rela-num-atoms', type=int, default=96,
 parser.add_argument('--num-edges', type=int, default=41,
                     help='Number of atoms in simulation.')
 parser.add_argument('--encoder', type=str, default='simple',
-                    help='Type of path encoder model (mlp or cnn).')
+                    help='Type of path encoder model (simple or nmp).')
 parser.add_argument('--dropout', type=float, default=0.5,
                     help='Dropout rate (1 - keep probability).')
 parser.add_argument('--log-interval', type=int, default=5, metavar='N',
@@ -170,8 +170,8 @@ else:
 
 # ===================== Model Definition ========================#
 
-if args.encoder == 'mlp':
-    model = MLPEncoder(args.hidden,
+if args.encoder == 'nmp':
+    model = NMPEncoder(args.hidden,
                        edge_types=args.edge_types, node_types=args.node_types, n_iter=args.n_iter,
                        do_prob=args.dropout, use_vis=use_vis, use_spatial=use_spatial, use_sem=use_sem, use_loc=args.use_loc, use_cls=args.use_cls)
 elif args.encoder == 'simple':
